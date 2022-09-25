@@ -11,6 +11,8 @@ The task is a multioutput classification problem, and we leverage RandomFroest c
 * data: This folder contains sample messages and categories datasets in csv format.
 * app: the run.py should be used to trigger the web app.
 
+Here is the tree-based file structure of the project. 
+
 * app
 | - template
 
