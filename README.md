@@ -17,7 +17,7 @@ Please run the following commonds:
 
 * running  ETL pipeline:
 
-** python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db**
+**python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db**
 
 running ML pipeline:
 
