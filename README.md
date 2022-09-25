@@ -4,6 +4,9 @@
 In this repository, a machine learning pipeline is designed to classify real messages that were sent during disaster events (the data comes from Appen, https://appen.com/). 
 The task is a multioutput classification problem, and we leverage RandomFroest classifiers to classify the messages.
 
+In this repository, we create a machine learning pipeline to categorize disaster messages so that we can send the messages to an appropriate disaster relief agency.
+The task of categorizing received messages correctly during disasters is vital since it can speed up disaster relief operations, and make them more efficient. 
+
 ## File descriptions: 
 
 * process_data.py: This script is for Extract, Transform, and Load process. Here, we read the dataset, clean the data, and then store it in an SQLite database.
