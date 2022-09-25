@@ -43,7 +43,7 @@ def index():
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
     # Top five categories
-    category_count =                                                             df.iloc[:,4:].sum().sort_values(ascending=False)[1:6]
+    category_count = df.iloc[:,4:].sum().sort_values(ascending=False)[1:6]
     category_names = list(category_count.index)
     
     # create visuals
