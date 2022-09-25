@@ -10,7 +10,7 @@ def load_data(messages_filepath, categories_filepath):
     categories_filepath: string. filepath for categories dataset.
        
     outputs:
-    df: dataframe. the dataframe contains the messages and                                       categories datasets.
+    df: dataframe. the dataframe contains the messages and categories datasets.
     """
     # load messages dataset
     messages = pd.read_csv(messages_filepath)
@@ -21,10 +21,10 @@ def load_data(messages_filepath, categories_filepath):
 
 
 def clean_data(df):
-    """This function cleans the dataframe by removing duplicates               and converting categorical columns to binary values
+    """This function cleans the dataframe by removing duplicates and converting categorical columns to binary values
     
     Args:
-    df: dataframe. the dataframe contains the messages and                                       categories datasets.
+    df: dataframe. the dataframe contains the messages and categories datasets.
        
     Returns:
     df: dataframe. a clean version of the input 
@@ -56,7 +56,7 @@ def clean_data(df):
 
 
 def save_data(df, database_filename):
-    """ This function saves the cleaned dataframe to SQLite database           by taking the name of the database and the cleaned                     dataframe"""
+    """ This function saves the cleaned dataframe to SQLite database by taking the name of the database and the cleaned dataframe"""
     engine = create_engine('sqlite:///' + database_filename)
     df.to_sql('Disaster_data', engine, index=False)  
 
