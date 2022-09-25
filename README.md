@@ -32,7 +32,7 @@ Here is the tree-based file structure of the project.
 
 |- process_data.py
 
-|- InsertDatabaseName.db # database to save clean data to
+|- InsertDatabaseName.db # database to save clean data
 
 
 * models
