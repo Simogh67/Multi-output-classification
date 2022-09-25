@@ -38,7 +38,7 @@ def load_data(database_filepath):
 
 
 def tokenize(text):
-    """ This function takes text, and outputs a list of tokenized             version of the text
+    """ This function takes text, and outputs a list of tokenized version of the text
     """
     tokens = word_tokenize(text)
     lemmatizer = WordNetLemmatizer()
@@ -78,7 +78,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     '''
     y_pred = model.predict(X_test)
     for i in range(len(category_names)):
-        print("Category:", category_names[i],"\n",                                     classification_report(Y_test.iloc[:, i].values,                                                          y_pred[:, i]))
+        print("Category:", category_names[i],"\n",classification_report(Y_test.iloc[:, i].values,y_pred[:, i]))
 
 
 def save_model(model, model_filepath):
