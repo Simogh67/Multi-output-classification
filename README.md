@@ -16,12 +16,13 @@ The task is a multioutput classification problem, and we leverage RandomFroest c
 Please run the following commonds: 
 
 * running  ETL pipeline:
+
 ** python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db**
 
-running ML pipeline
+running ML pipeline:
 
 **python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl**
 
-Finally run the web app. 
+Finally run the web app:
 
 **python run.py**
