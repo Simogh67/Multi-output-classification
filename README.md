@@ -14,6 +14,7 @@ The task is a multioutput classification problem, and we leverage RandomFroest c
 Here is the tree-based file structure of the project. 
 
 * app
+
 | - template
 
 | |- master.html # main page of web app
@@ -24,6 +25,7 @@ Here is the tree-based file structure of the project.
 
 
 * data
+
 |- disaster_categories.csv # data to process
 
 |- disaster_messages.csv # data to process
@@ -34,6 +36,7 @@ Here is the tree-based file structure of the project.
 
 
 * models
+
 |- train_classifier.py
 
 |- classifier.pkl # saved model
